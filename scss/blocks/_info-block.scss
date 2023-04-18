@@ -1,0 +1,30 @@
+.info__time {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 300;
+    margin: 0 50px 0 0;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.info__format {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 300;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__time {
+        font-size: 12px;
+    }
+    
+    .info__format {
+        font-size: 12px;
+    }
+}

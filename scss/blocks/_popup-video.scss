@@ -1,0 +1,64 @@
+.popup-video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #0000006d;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: .2s ease-in-out;
+    opacity: 0;
+    z-index: -99;
+
+    &.popup-video--active {
+        z-index: 9999;
+        opacity: 1;
+    }
+}
+
+.popup-video__inner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 40px;
+    position: relative;
+    max-width: 1180px;
+    height: 500px;
+
+    .button-video-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(/img/close.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+
+    .popup {
+        padding: 0;
+
+        &.popup--active {
+
+            overflow: auto;
+
+            .popup__inner {
+                top: 0;
+                left: 0;
+                transform: translate(0,0);
+                border-radius: 0;
+            }
+        }
+    }
+}

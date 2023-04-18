@@ -1,0 +1,20 @@
+.notice {
+    max-width: 500px;
+}
+
+.notice__message {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 140%;
+    border-radius: 5px;
+
+    background: #fff;
+    color: $accent-color;
+    margin: 0 0 10px;
+
+    display: none;
+
+    &.notice--active {
+        display: inline-block;
+    }
+}

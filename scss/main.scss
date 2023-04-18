@@ -1,0 +1,35 @@
+// main style
+
+@import "./main/reset";
+@import "./main/vars";
+@import "./main/fonts";
+
+// base style
+
+.container {
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Gerbera;
+}
+
+// import block style
+
+@import "./blocks/header";
+@import "./blocks/buttons";
+@import "./blocks/statistics";
+@import "./blocks/footer";
+@import "./blocks/title";
+@import "./blocks/partners";
+@import "./blocks/slider";
+@import "./blocks/popup";
+@import "./blocks/popup-thanks";
+@import "./blocks/popup-video";
+@import "./blocks/notice";
+@import "./blocks/checkbox";
+@import "./blocks/form";
+@import "./blocks/logo-block";
+@import "./blocks/info-block";
